@@ -42,7 +42,7 @@ def tfu_zonemanagement_zonename_select( set_up_test ) :
     for option in total_drop_zone  :
         try :  
             return_element = wait_for_element_clickable(option , 10 )
-            if return_element != None : 
+            if return_element  : 
                 option.click()    
                 selected_name.append(option.text)
 
